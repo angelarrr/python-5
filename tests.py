@@ -1,5 +1,6 @@
 import unittest
 import task
+from datetime import date
 
 
 class TestCase(unittest.TestCase):
@@ -12,6 +13,12 @@ class TestCase(unittest.TestCase):
         list = [1, 3, 5, 7]
         listResult = task.first_last(list)
         self.assertEqual([1, 7], listResult)
+
+    def test_calc_days(self):
+        first = date(2020, 2, 1)
+        last = date(2020, 2, 10)
+        days = task.calc_days(first, last)
+        self.assertEqual(9, days)
 
 
 if __name__ == '__main__':

@@ -9,3 +9,8 @@ def calc_area(radius):
 def first_last(list):
     result = [list[0], list[-1]]
     return result
+
+
+def calc_days(fdate, ldate):
+    days = ldate - fdate
+    return days
