@@ -10,7 +10,7 @@ class TestCase(unittest.TestCase):
 
     def test_first_last(self):
         list = [1, 3, 5, 7]
-        listResult = first_last(list)
+        listResult = task.first_last(list)
         self.assertEqual([1, 7], listResult)
 
 
