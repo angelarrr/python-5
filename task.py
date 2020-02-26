@@ -12,5 +12,5 @@ def first_last(list):
 
 
 def calc_days(fdate, ldate):
-    days = ldate - fdate
-    return days
+    delta = ldate - fdate
+    return delta.days
