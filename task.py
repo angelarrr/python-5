@@ -1,2 +1,0 @@
-def firstrun():
-    return "success"
